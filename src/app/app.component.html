@@ -1,1 +1,25 @@
-<h1> {{'pAnTaLla dE PruBA' | titlecase}} </h1>
+<app-menu> </app-menu>
+<div class="text-layout">
+    <h1> {{ nombre | titlecase }} </h1>
+    <h1> {{ '1000' | number }} </h1>
+    <h1> {{ obj | json }} </h1>
+</div>
+
+<button pButton
+        (click)="mostrarNombre()"
+        label="Cambiar Nombre"
+        icon="pi pi-android"
+        iconPos="right"
+        class="p-button-help">
+</button>
+
+<hr>
+
+<p-card [header]="nombre | titlecase" 
+        [style]="{'width': '25rem', 'margin-bottom': '2em'}"
+        subheader="Esto es un subheader">
+   
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+</p-card>
